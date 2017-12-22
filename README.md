@@ -6,7 +6,14 @@
 
 - install Docker (community edition): https://docs.docker.com/engine/installation/#cloud
 - pull the image for this course: `docker pull geal/cpp-course`
-- get a shell inside the image: `docker run -t -i -v $(pwd):/opt/course geal/cpp-course /bin/bash`
+- get a shell inside the image
+  - if you installed Docker Toolbox: `docker run -t -i -v $(pwd):/opt/course geal/cpp-course /bin/bash`
+  - if you installed Docker For Windows, in a CMD: `docker run -t -i -v /c/Users/v-tre_nom_d_utilisateur/Desktop:/opt/course geal/cpp-course /bin/bash`
+
+### Incompatibilities with VMWare
+
+- Docker for Windows: apparently, VMWare cannot be used concurrently with Docker because Docker uses Hyper V. You can activate (for this course) or deactivate (for your vmware course) Hyper V by following the instructions at https://superuser.com/questions/540055/convenient-way-to-enable-disable-hyper-v-in-windows-8
+- Docker Toolbox: you can launch VMWare if you temprarily deactivate VirtualBox's network interfaces
 
 ## shell commands
 
