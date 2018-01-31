@@ -5,6 +5,8 @@
 ### Installation instructions
 
 - install Docker (community edition): https://docs.docker.com/engine/installation/#cloud
+  - Docker for Windows if you have Windows 10 Pro (with Hyper V support)
+  - Docker Toolbox if you have Windows 10 Home
 - pull the image for this course: `docker pull geal/cpp-course`
 - get a shell inside the image
   - if you installed Docker Toolbox: `docker run -t -i -v $(pwd):/opt/course geal/cpp-course /bin/bash`
